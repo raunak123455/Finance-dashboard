@@ -228,7 +228,7 @@ export function PortfolioGrowth() {
     const fetchPortfolioData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/portfolio-growth?timeFrame=${timeFrame}`
+          `https://finance-dashboard-g3nk.onrender.com/api/portfolio-growth?timeFrame=${timeFrame}`
         );
         const data = await response.json();
 
