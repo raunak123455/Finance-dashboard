@@ -23,7 +23,7 @@ interface MarketUpdate {
 
 export async function fetchRecentTrades(): Promise<Trade[]> {
   try {
-    const response = await fetch("http://localhost:5000/api/trades");
+    const response = await fetch("https://finance-dashboard-g3nk.onrender.com/api/trades");
     const data = await response.json();
     return data.map((trade: any) => ({
       id: trade._id,
