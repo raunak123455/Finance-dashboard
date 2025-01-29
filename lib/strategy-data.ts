@@ -33,7 +33,7 @@ export interface Strategy {
 
 export async function fetchStrategies(): Promise<Strategy[]> {
   try {
-    const response = await fetch("http://localhost:5000/api/strategies");
+    const response = await fetch("https://finance-dashboard-g3nk.onrender.com/api/strategies");
     const data = await response.json();
     return data.map((strategy: any) => ({
       id: strategy._id,
