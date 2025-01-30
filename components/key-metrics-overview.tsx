@@ -91,7 +91,7 @@ export function KeyMetricsOverview() {
 
   const fetchMetricsData = async (startDate?: Date, endDate?: Date) => {
     try {
-      let url = "https://finance-dashboard-g3nk.onrender.com/api/key-metrics";
+      let url = "https://finance-dashboard-g3nk.onrender.com/api/metrics";
       if (startDate && endDate) {
         url += `?start=${startDate.toISOString()}&end=${endDate.toISOString()}`;
       }
