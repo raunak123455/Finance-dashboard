@@ -41,7 +41,7 @@ export function MetricsOverview() {
     setIsLoading(true);
     setError(null);
     try {
-      let url = "http://localhost:5000/api/metrics";
+      let url = "https://finance-dashboard-g3nk.onrender.com/api/metrics";
       const queryParams = new URLSearchParams();
 
       if (params.timeFrame) {
